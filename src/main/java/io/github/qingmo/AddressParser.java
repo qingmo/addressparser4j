@@ -17,7 +17,7 @@ public class AddressParser {
     private final LocationParse locationParse;
 
     private AddressParser() throws IOException {
-        locationParse = new LocationParseImpl("/Users/chaosmo/workspace/addressparser4j/src/main/resources/pca.csv");
+        locationParse = new LocationParseImpl("pca.csv");
     }
 
     /**

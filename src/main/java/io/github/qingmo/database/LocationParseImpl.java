@@ -44,8 +44,6 @@ public class LocationParseImpl implements LocationParse {
                 .with(schema)
                 .readValues(pcaFile);
         List<LocateItemDTO> items = it.readAll();
-        LocateDatabase ret = new LocateDatabase();
-        ret.setItems(items);
-        return ret;
+        return new LocateDatabase(items);
     }
 }
